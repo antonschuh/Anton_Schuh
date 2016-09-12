@@ -8,14 +8,10 @@ public class Lesson_03
 		Scanner keyboard = new Scanner(System.in);
 		
 		//prompt for user imput
-		System.out.println("How old are you? ");
+		System.out.println("Who is your favorite teacher? ");
 		
-		//search for the next integer tat user enters
-		int num = keyboard.nextInt();
+		String teacher = keyboard.next();
 		
-		//print the results...
-		System.out.println("Wow! " + num + " is perfect. You're pretty handsome." );
-		
-		
+		System.out.println("okay! " + teacher + " is very good!" );
 	}
 }
