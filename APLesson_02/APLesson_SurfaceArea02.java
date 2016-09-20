@@ -5,7 +5,7 @@ public class APLesson_SurfaceArea02
 		int l = 2;
 		int w = 2;
 		int h = 13;
-		int SArea = l * w * h;
+		int SArea = 2 * (w * l + h * l + h * w);
 		
 		System.out.println("The Surface area of your rectangular prism is" +" "+ SArea);
 	}
