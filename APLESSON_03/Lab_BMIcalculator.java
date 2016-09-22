@@ -1,4 +1,4 @@
-import java.util.Scanner; //import Staement
+import java.util.Scanner; //import Statement
 
 public class Lab_BMIcalculator
 {
