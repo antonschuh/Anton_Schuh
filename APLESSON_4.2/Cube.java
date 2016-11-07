@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Cube
 {
-	public int side;
-	public double SA;
+	static int side;
+	static double SA;
 	
 	public static void main(String[]args)
 	{
@@ -11,18 +11,18 @@ public class Cube
 		Cube surface = new Cube();
 		
 		System.out.println("Please enter the leangth of the side: ");
-		surface.side = kb.nextInt();
+		side = kb.nextInt();
 		
-		surface.area();
-		surface.print();
+		calcSurf();
+		print();
 		
 	}
-	public double area() 
+	public static void calcSurf() 
 	{
-		return SA = 6*side*side;
+		SA = 6*side*side;
 	}
-	public void print()
+	public static void print()
 	{
-		System.out.printf("The Surface area of your cube is %5.2f", SA);
+		System.out.println("The Surface area of your cube is " + SA);
 	}
 }

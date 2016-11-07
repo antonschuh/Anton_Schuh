@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Circle
 {
-	public double r;
-	public double area;
+	static int r;
+	static double area;
 	
 	public static void main(String[]args)
 	{
@@ -11,19 +11,18 @@ public class Circle
 		Circle round = new Circle();
 		
 		System.out.println("Please enter the radius of your circle: ");
-		round.r = kb.nextInt();
+		r = kb.nextInt();
 		
-		round.area();
-		round.print();
+		calcArea();
+		print();
+	}
+	public static void calcArea()
+	{
+			area = 3.14*(r*r);
 	}
 	
-	public double area()
+	public static void print()
 	{
-			return area = 3.14*(r*r);
-	}
-	
-	public void print()
-	{
-			System.out.printf("The area of your circle with a radius of" +r+ " %.5f is", area);
+			System.out.println("The area of your circle with a radius of " + r + " is " + area);
 	}	
 }	

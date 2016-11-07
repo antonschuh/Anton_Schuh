@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Rectangle 
 {
-	public double l;
-	public double w;
-	public double perimeter;
+	static int l;
+	static int w;
+	static double perimeter;
 	
 	public static void main(String[]args)
 	{
@@ -12,21 +12,20 @@ public class Rectangle
 		Rectangle box = new Rectangle();
 		
 		System.out.println("Please enter the length: ");
-		box.l = kb.nextInt();
+		l = kb.nextInt();
 		
 		System.out.println("Please enter the width: ");
-		box.w = kb.nextInt();
+		w = kb.nextInt();
 		
-		box.perimeter();
-		box.print();
-
+		calcPerim();
+		print();
 	}
-	public double perimeter() 
+	public static void calcPerim() 
 	{
-		return perimeter = 2.0*l + 2.0*w;
+		perimeter = 2.0*l + 2.0*w;
 	}
-	public void print()
+	public static void print()
 	{
-		System.out.printf("Your rectangle is %5.2f ft around", perimeter);
+		System.out.println("The perimeter of your rectangle is " + perimeter);
 	}
 }
