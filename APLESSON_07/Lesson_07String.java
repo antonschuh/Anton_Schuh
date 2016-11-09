@@ -7,7 +7,7 @@ public class Lesson_07String
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
-		System.out.println("Please aenter a sentence: ");
+		System.out.println("Please enter a sentence: ");
 		sentence = kb.nextLine();
 		
 		while(sentence.indexOf(" ") >= 0)
