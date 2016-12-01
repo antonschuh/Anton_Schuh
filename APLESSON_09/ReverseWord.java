@@ -18,6 +18,8 @@ public class ReverseWord
 		{
 			System.out.print( name + ", ");
 			
-		}		
+		}	
+		
+		System.out.println("\nReversed... ");
 	}
 }
