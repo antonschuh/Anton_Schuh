@@ -1,23 +1,19 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class RandomNumbers
 {
 	public static void main(String[]args)
 	{ 
-		int nums = "1, 2, 3, 4, 5, 6, 7, 8, 9";
-		int[][]randNums = new int [4][4];
+		Random rand = new Random();
+		int[][] randNums = new int [4][4];
 		
-			randNums [0][0] = 1;
-			randNums [1][1] = 2;
-			randNums [2][2] = 3;
-			randNums [3][3] = 4;
-		
-		int num = 1;
 		for(int i = 0; i < randNums.length; i++)
 		{
 			for(int j = 0; j < randNums[i].length; j++)
 			{
-				randNums[i][j] = num;
+				randNums[i][j] = rand.nextInt(100 - 1 + 1) + 1;
 			}
-			num++;
 		}
 		
 		for(int i = 0; i < randNums.length; i++)
