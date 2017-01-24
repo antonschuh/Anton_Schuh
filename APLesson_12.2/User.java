@@ -35,7 +35,10 @@ public class User
 	
 	public String toString() 
 	{
-	   return "Customer Info...\nFirst Name: " + firstName + "\nLast Name: " + lastName + "\nAvatar: " + avatar + "\nUser ID#: " + userID;
+	   return "Customer Info...\nFirst Name: " + firstName +
+	                           "\nLast Name: " + lastName +
+	                           "\nAvatar: " + avatar +
+	                           "\nUser ID#: " + userID;
 	}
 	
 	public String getFirstName() 
@@ -76,13 +79,13 @@ public class User
 		Scanner kb = new Scanner(System.in);
 		User person;
 		
-		System.out.println("Please enter your first name: ");
+		System.out.println("Please enter first name: ");
 		String fn = kb.nextLine();
 		
-		System.out.println("Please enter your last name: ");
+		System.out.println("Please enter last name: ");
 		String ln = kb.nextLine();
 		
-		System.out.println("Would you like to use a public avatar? (y or n) y meaning yes and n meaniing no");
+		System.out.println("Would you like to use a public avatar? (y or n)");
 		String choice = kb.nextLine();
 		
 		if(choice.equals("y")) 
