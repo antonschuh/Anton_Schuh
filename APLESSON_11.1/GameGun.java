@@ -59,7 +59,19 @@ public class GameGun
 	public static void reLoad() 
 	{
 		if(bulletCount <= 96)
-			shotCount = 0;
+		{
+			if(shotCount > 0) 
+			{
+				bulletCount = bulletCount - (CLIPSIZE - shotCount);
+				shotCount = 0;
+			}
+			else
+			{
+				bulletCount = bulletCount - CLIPSIZE;
+				shotCount = 0;
+			}
+				
+		}
 		
 		resetClip(clip);
 	}
