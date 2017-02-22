@@ -1,33 +1,48 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Random;
 
-public class GameSystem
+public class GameSystem 
 {
-	ArrayList<Game> gamelist = new ArrayList<Game>();
 	
-	public GameSystem()
+	private String platForm;
+	private int serialNo;
+	
+	public GameSystem(String platForm) 
 	{
-		super();
+		this.platForm = platForm;
+		
+		Random rand = new Random();
+		serialNo = rand.nextInt(9000000) + 1000000;
+	}
+
+	public GameSystem() 
+	{
+		// TODO Auto-generated constructor stub
+		Random rand = new Random();
+		serialNo = rand.nextInt(9000000) + 1000000;
+	}
+
+	public String getPlatForm() 
+	{
+		return platForm;
+	}
+
+	public void setPlatForm(String platForm) {
+		this.platForm = platForm;
+	}
+
+	public int getSerialNo() 
+	{
+		return serialNo;
+	}
+
+	public void setSerialNo(int serialNo) 
+	{
+		this.serialNo = serialNo;
 	}
 	
-	public GameSystem(String List)
+	public String toString()
 	{
-		loadGames(list);
-	}
-	 
-	public void loadGames(String list)
-	{
-		ArrayList<String>Games = new ArrayList<>
-		(Arrays.asList(list.split(", ")));
-		
-		String platform = "";
-		Int serialNo = "";
-		
-		for(int i = 0; i < game.size(); i = i+2)
-		{
-			if( getThatGame(games.get(i)) == null )
-				if(gmaes.get(i+1).equals("console
-			gameList.add( new Console games.get)
-		}
+		return	"Platform: " + getPlatForm() +
+				"\nSerial #: " + getSerialNo();
 	}
 }
