@@ -1,23 +1,19 @@
 import java.util.Random;
 
-public class Toyota implements Location 
+public class Honda implements Location 
 {
 	private double[] location = new double[2];
 	private int ID;
 	
-	public Toyota(String str) 
+	public Honda(double[] position) 
 	{
-		String[] position = str.split(", ");
-		
-		location[0] = Double.parseDouble(position[0]); 
-		location[1] = Double.parseDouble(position[1]); 
+		location = position;
 		
 		//returns a random 6 digit ID #
 		Random rand = new Random();
 		ID = rand.nextInt(9000000-1)+1000000;
 	}
 	
-	@Override
 	public int getID() 
 	{
 	// TODO Auto-generated method stub
@@ -30,7 +26,6 @@ public class Toyota implements Location
 		location[1] = location[1] + y;
 	}
 	
-	@Override
 	public double[] getLoc() 
 	{
 		return location;
