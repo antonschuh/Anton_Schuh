@@ -1,6 +1,16 @@
 
-public class StudentAdvance extends Ticket
+public class StudentAdvance extends Advanced
 {
+
+	public StudentAdvance(int daysLeft) {
+		super(daysLeft);
+		// TODO Auto-generated constructor stub
+	}
+
+	public StudentAdvance() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public double getPrice() {

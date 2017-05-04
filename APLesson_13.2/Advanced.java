@@ -9,6 +9,10 @@ public class Advanced extends Ticket
 		this.daysLeft = daysLeft;
 	}
 
+	public Advanced() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getDaysLeft() 
 	{
 		return daysLeft;
